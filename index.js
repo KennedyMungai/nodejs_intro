@@ -1,3 +1,3 @@
-const { moment } = require('moment')
+const moment = require('moment')
 
-console.log('Something in the way')
+console.log(moment(new Date()).format('YYYY-MM-DD HH:mm:ss'))
