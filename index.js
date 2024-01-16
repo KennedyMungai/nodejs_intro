@@ -6,6 +6,8 @@ fs.readFile('./files/starter.txt', 'utf-8',(err, data) => {
     console.log(data);
 })
 
+console.log('Hello...')
+
 // exit on uncaught errors
 process.on('uncaughtException', err => {
     console.error(`There was an uncaught error: ${err}`)
