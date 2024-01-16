@@ -3,6 +3,7 @@
 
 const os = require('os')
 const path = require('path')
+const math = require('./math')
 
 // console.log(os.platform(), os.homedir(), os.hostname(), os.type(), os.version())
 // console.log(__dirname)
