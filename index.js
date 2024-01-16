@@ -20,7 +20,7 @@ fs.writeFile(path.join(__dirname, 'files', 'reply.txt'), 'This is some text to b
     
     fs.rename(path.join(__dirname, 'files', 'reply.txt'), path.join(__dirname, 'files', 'renamed_reply.txt'), (err) => {
         if(err) throw err
-        console.log('File appended successfully')
+        console.log('File renamed successfully')
     })
 })
 
