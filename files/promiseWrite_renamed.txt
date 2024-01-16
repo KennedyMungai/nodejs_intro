@@ -1,3 +1,0 @@
-Hello NodeJS
-
-Nice to meet you
