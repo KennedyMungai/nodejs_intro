@@ -1,6 +1,13 @@
 const fsPromises = require('fs').promises
 const path = require('path')
 
+const fileOps = async () => {
+    try {
+        const data = await fsPromises.readFile(path.join(__dirname, 'files', 'starter.txt'), 'utf-8')
+    } catch (err) {
+        console.error(err)
+    }
+}
 
 fs.readFile(path.join(__dirname, 'files', 'starter.txt'), 'utf-8',(err, data) => {
     if(err) throw err;
