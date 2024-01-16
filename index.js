@@ -5,6 +5,8 @@ const fileOps = async () => {
     try {
         const data = await fsPromises.readFile(path.join(__dirname, 'files', 'starter.txt'), 'utf-8')
         console.log(data)
+        await fsPromises.writeFile(path.join(__dirname, 'files', 'promiseWrite.txt'), data)
+        await fsPromises.appendFile(path.join(__dirname, 'files', 'promiseWrite.txt'), '\n\nNice to meet you')
     } catch (err) {
         console.error(err)
     }
