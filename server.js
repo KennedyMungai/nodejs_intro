@@ -3,7 +3,7 @@
 
 const os = require('os')
 const path = require('path')
-const math = require('./math')
+const {add, subtract, multiply, divide} = require('./math')
 
 // console.log(os.platform(), os.homedir(), os.hostname(), os.type(), os.version())
 // console.log(__dirname)
@@ -14,4 +14,4 @@ const math = require('./math')
 // console.log(path.extname(__filename))
 
 // console.log(path.parse(__filename))
-console.log(math.add(2, 3))
+console.log(add(2, 3))
