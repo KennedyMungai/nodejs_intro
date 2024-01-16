@@ -13,4 +13,5 @@ const math = require('./math')
 // console.log(path.basename(__filename))
 // console.log(path.extname(__filename))
 
-console.log(path.parse(__filename))
+// console.log(path.parse(__filename))
+console.log(math.add(2, 3))
