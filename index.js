@@ -1,4 +1,5 @@
 const fs = require('fs')
+const path = require('path')
 
 
 fs.readFile('./files/starter.txt', 'utf-8',(err, data) => {
